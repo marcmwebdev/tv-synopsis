@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+  body
+    div
+      h1= message
+    div
+      h2 Developed by
+      each item in developedBy
+        li= item
+    div
+      h2 Starring
+      each item in starring
+        li= item
+    div
+      h2 Seasons
+      each item in seasons
+        li
+          a(href='/seasons/'+ item.number) Season #{item.number}
